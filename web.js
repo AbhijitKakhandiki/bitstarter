@@ -15,7 +15,7 @@ var data = fs.readFileSync('index.html');
 //  var in = fs.readFileSync('index.html').toString());
 //  response.send.(in);
   //response.send('Hello World 3 this time!');
-});
+//});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
