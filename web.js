@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express.createServer(express.logger());
-
+var infile = "index.html";
 
 app.get('/', function(request, response) {
-  var in = fs.readFileSync('./index.html','utf8');
+  var in = fs.readFileSync(infile);
   response.end.(in.toString());
 });
 
