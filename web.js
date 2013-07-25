@@ -3,9 +3,17 @@ var app = express.createServer(express.logger());
 var infile = "index.html";
 
 app.get('/', function(request, response) {
-  var fs = require('fs');
-  var in = fs.readFileSync('index.html').toString());
-  response.send.(in);
+var fs = require('fs');
+var data = fs.readFileSync('index.html');
+  response.send(data.toString('utf-8'));
+
+});
+
+
+//app.get('/', function(request, response) {
+//  var fs = require('fs');
+//  var in = fs.readFileSync('index.html').toString());
+//  response.send.(in);
   //response.send('Hello World 3 this time!');
 });
 
