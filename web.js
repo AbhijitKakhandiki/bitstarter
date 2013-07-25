@@ -4,8 +4,8 @@ var infile = "index.html";
 
 app.get('/', function(request, response) {
   var fs = require('fs');
-  var in = fs.readFileSync('index.html', 'utf8');
-  response.send.(in.toString());
+  var in = fs.readFileSync('index.html', 'utf-8');
+  response.send.(in);
   //response.send('Hello World 3 this time!');
 });
 
